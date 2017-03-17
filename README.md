@@ -1,5 +1,5 @@
 # ImageMp3VideoCreator
-Creates a video from a static image and an mp3 audio file using ffmpeg.
+Creates a video from static image and mp3 audio file using ffmpeg.
 
 This bash script was made for personal use and is not intended to be a generic converter. It can be changed to match your needs.
 
