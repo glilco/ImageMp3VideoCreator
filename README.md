@@ -21,3 +21,5 @@ Mp3 files must be in the same directory of the script.
 
 create-video.sh will create the video image based on DefaultCover.svg, replacing the placeholders with te actual episode data. The placeholders are NN for the episode number and TEMA for the episode name.
 
+The image DefaultCover.svg can be altered but it must contain the placeholders needed by create-video.sh
+
