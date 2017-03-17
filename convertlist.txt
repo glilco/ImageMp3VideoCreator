@@ -1,51 +1,55 @@
-041-Desbunde.mp3
-040-Pretagogia.mp3
-039-Anarquismo.mp3
-038-Bob-Dylan.mp3
-037-Filosofia-no-ensino-medio.mp3
-Filosofia no Ensino Médio
-036-Religiosidade-brasileira.mp3
-035-Richard-Rorty.mp3
-034-Epistemologia.mp3
-033-OSs-na-educacao.mp3
-OSs na educação
-032-Pensamento-ecologico.mp3
-Pensamento Ecológico
-031-Oswald-de-Andrade.mp3
-030-Filosofia-Africana-Ancestralidade.mp3
-Filosofia Africana: Ancestralidade
-029-Filosofia-do-acesso-Aberto.mp3
-028-Afroperspectiva.mp3
-027-Quadrinhos-e-Filosofia.mp3
-026-Carnaval-e-Filosofia.mp3
-025-Podcast-e-Filosofia.mp3
-024-Legiao-Urbana.mp3
-Legião Urbana
-023-Sigmund-Freud.mp3
-022-Marcien-Towa.mp3
-021-Carl-Jung.mp3
-020-Branquitude.mp3
-019-Artes-marciais.mp3
-018-Hip-Hop.mp3
-017-Cornel-West.mp3
-016-Teatralidade-e-filosofia.mp3
-015-Filosofia-Africana-Ubuntu.mp3
-Filosofia Africana: Ubuntu
-014-Filosofia-do-Design.mp3
-013-Direito-dos-estrangeiros.mp3
-012-Filosofia-Japonesa.mp3
-011-Filosofia-Africana-Ancestralidade-e-Encantamento.mp3
-Filosofia Africana: Ancestralidade e Encantamento
-010-Filosofia-Pop.mp3
-009-Feminismo.mp3
-008-Filosofia-e-Cultura-Brasileira.mp3
-007-Filosofia-Como-Modo-de-Vida.mp3
-006-Socrates.mp3
-Sócrates
-005-Platao.mp3
-Platão
-004-Musica-popular.mp3
-Música Popular
-003-Existencialismo.mp3
-002-Felicidade.mp3
-001-Filosofia.mp3
+#041-Desbunde.mp3
+#040-Pretagogia.mp3
+#039-Anarquismo.mp3
+#038-Bob-Dylan.mp3
+#037-Filosofia-no-ensino-medio.mp3
+#Filosofia no Ensino Médio
+#036-Religiosidade-brasileira.mp3
+#035-Richard-Rorty.mp3
+#034-Epistemologia.mp3
+#033-OSs-na-educacao.mp3
+#OSs na educação
+#032-Pensamento-ecologico.mp3
+#Pensamento Ecológico
+#031-Oswald-de-Andrade.mp3
+#030-Filosofia-Africana-Ancestralidade.mp3
+#Filosofia Africana: Ancestralidade
+#029-Filosofia-do-acesso-Aberto.mp3
+#028-Afroperspectiva.mp3
+#027-Quadrinhos-e-Filosofia.mp3
+#026-Carnaval-e-Filosofia.mp3
+#025-Podcast-e-Filosofia.mp3
+#024-Legiao-Urbana.mp3
+#Legião Urbana
+#023-Sigmund-Freud.mp3
+#022-Marcien-Towa.mp3
+#021-Carl-Jung.mp3
+#020-Branquitude.mp3
+#019-Artes-marciais.mp3
+#018-Hip-Hop.mp3
+#017-Cornel-West.mp3
+#016-Teatralidade-e-filosofia.mp3
+#015-Filosofia-Africana-Ubuntu.mp3
+#Filosofia Africana: Ubuntu
+#014-Filosofia-do-Design.mp3
+#013-Direito-dos-estrangeiros.mp3
+#012-Filosofia-Japonesa.mp3
+#011-Filosofia-Africana-Ancestralidade-e-Encantamento.mp3
+#Filosofia Africana: Ancestralidade e Encantamento
+#010-Filosofia-Pop.mp3
+#009-Feminismo.mp3
+#008-Filosofia-e-Cultura-Brasileira.mp3
+#007-Filosofia-Como-Modo-de-Vida.mp3
+#006-Socrates.mp3
+#Sócrates
+#005-Platao.mp3
+#Platão
+#004-Musica-popular.mp3
+#Música Popular
+#003-Existencialismo.mp3
+#002-Felicidade.mp3
+#001-Filosofia.mp3
+002-1ano-catarse.mp3
+[Especial] Um ano de Filosofia Pop
+001-50000-Downloads.mp3
+[Especial] 50000 Downloads

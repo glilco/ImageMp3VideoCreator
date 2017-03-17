@@ -1,31 +1,34 @@
 #!/bin/bash
-declare -a episodios
-#episodios=(`cat "convertlist.txt"`)
-mapfile -t episodios < convertlist.txt
 
-while [ ${#episodios[@]} -ne 0 ] ;
+# Builds the array with audio filenames and episode names
+declare -a episodes
+mapfile -t episodes < convertlist.txt
+
+while [ ${#episodes[@]} -ne 0 ] ;
 do
-    if [[ ${episodios[0]} = \#* ]] ;
+    # Ignore commented lines
+    if [[ ${episodes[0]} = \#* ]] ;
     then
-        unset episodios[0]
-        episodios=( "${episodios[@]}" )
+        unset episodes[0]
+        episodes=( "${episodes[@]}" )
         continue
     fi    
     
-    AUDIO_NOME="${episodios[0]}"
-    unset episodios[0]
-    episodios=( "${episodios[@]}" )  
+    # Take the line as an audio filename
+    AUDIO_NAME="${episodes[0]}"
+    unset episodes[0]
+    episodes=( "${episodes[@]}" )  
     
     
-    
-    if [[ ${episodios[0]} != *.mp3 ]] && ![[ -z "${episodios[0]}" ]] ;
+    # If the next line is not empty and is not a Mp3 file, it is an episode name
+    if [[ ${episodes[0]} != *.mp3 ]] && ! [[ -z "${episodes[0]}" ]] ;
     then
-        EPISODIO_NOME="${episodios[0]}"
-        unset episodios[0]
-        episodios=( "${episodios[@]}" )
-        ./create-video.sh $AUDIO_NOME "$EPISODIO_NOME"
+        EPISODE_NAME="${episodes[0]}"
+        unset episodes[0]
+        episodes=( "${episodes[@]}" )
+        ./create-video.sh $AUDIO_NAME "$EPISODE_NAME"
     else
-        ./create-video.sh $AUDIO_NOME
+        ./create-video.sh $AUDIO_NAME
     fi
 done
 

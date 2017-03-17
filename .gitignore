@@ -1,4 +1,4 @@
 *.mp3
 *.mkv
-convertidos/*.png
-convertidos/*.svg
+converted/*.png
+converted/*.svg
