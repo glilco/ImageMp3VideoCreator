@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit on error
+set -e
+
 # Builds the array with audio filenames and episode names
 declare -a episodes
 mapfile -t episodes < convertlist.txt
@@ -18,6 +21,11 @@ do
     AUDIO_NAME="${episodes[0]}"
     unset episodes[0]
     episodes=( "${episodes[@]}" )  
+    
+    if [ ! -f "$AUDIO_NAME" ]; then
+        echo -e "\033[0;31mFile $AUDIO_NAME not found!\033[0m"
+        continue
+    fi
     
     
     # If the next line is not empty and is not a Mp3 file, it is an episode name

@@ -16,6 +16,11 @@ AUDIO_NAME="$1"
 ARRAY_EP=(${AUDIO_NAME//./ })
 ARRAY_EP=(${ARRAY_EP[0]//-/ })
 
+if [ ! -f "$AUDIO_NAME" ]; then
+    echo -e "\033[0;31mFile $AUDIO_NAME not found!\033[0m"
+    exit 1
+fi
+
 # Extracts the episode number from the first part of the filename
 EP_NR=${ARRAY_EP[0]}
 unset ARRAY_EP[0]
@@ -39,11 +44,18 @@ echo "Episode name: $EP_NAME"
 cp DefaultCover.svg "./converted/$EP_FILENAME.svg"
 chmod 644 "./converted/$EP_FILENAME.svg"
 
-sed -i "s/#NN/#$EP_NR/g" "./converted/$EP_FILENAME.svg"
-sed -i "s/TEMA/$EP_NAME/g" "./converted/$EP_FILENAME.svg"
+sed -i "s/#EPISODE_NUMBER/#$EP_NR/g" "./converted/$EP_FILENAME.svg"
+sed -i "s/EPISODE_NAME/$EP_NAME/g" "./converted/$EP_FILENAME.svg"
 
 # Converts the SVG file to PNG to be used as input in ffmpeg
-inkscape -z -e "./converted/$EP_FILENAME.png" "./converted/$EP_FILENAME.svg" 
+if hash inkscape 2>/dev/null; then
+    inkscape -z -e "./converted/$EP_FILENAME.png" "./converted/$EP_FILENAME.svg" 
+elif hash convert 2>/dev/null; then
+    convert -density 300 -antialias -background none  "./converted/$EP_FILENAME.svg"  "./converted/$EP_FILENAME.png"
+else
+    echo "Can't convert SVG file to PNG file."
+    exit 1
+fi
 
 # Creates the video using the created image and the provided audio
 ffmpeg -loop 1 -framerate 1/25 -i "./converted/$EP_FILENAME.png" -i "$AUDIO_NAME" -vf "scale='min(1280,iw)':-2,format=yuv420p" -c:v libx264 -preset veryslow -crf 0 -c:a copy -shortest "./converted/Videos/$EP_NR-$EP_FILENAME.mkv"
