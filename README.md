@@ -7,7 +7,7 @@ Depends on:
 - Mp3 support
 - ffmpeg
 - sed
-- Inkscape or ImageMagick
+- Inkscape, ImageMagick or GraphicsMagick
 
 The episodes-handler.sh reads convertlist.txt. Each line contains a filename of a mp3 file to be converted or the name of the episode in the previous line (the name is optional, just in case the episode name is different of the file name).
 

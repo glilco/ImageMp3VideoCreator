@@ -50,7 +50,9 @@ sed -i "s/EPISODE_NAME/$EP_NAME/g" "./converted/$EP_FILENAME.svg"
 if hash inkscape 2>/dev/null; then
     inkscape -z -e "./converted/$EP_FILENAME.png" "./converted/$EP_FILENAME.svg" 
 elif hash convert 2>/dev/null; then
-    convert -density 300 -antialias -background none  "./converted/$EP_FILENAME.svg"  "./converted/$EP_FILENAME.png"
+    convert "./converted/$EP_FILENAME.svg"  "./converted/$EP_FILENAME.png"
+elif hash gm 2>/dev/null; then
+    gm convert "./converted/$EP_FILENAME.svg"  "./converted/$EP_FILENAME.png"
 else
     echo "Can't convert SVG file to PNG file."
     exit 1
