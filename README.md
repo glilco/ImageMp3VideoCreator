@@ -10,6 +10,10 @@ Depends on:
 - sed
 - Inkscape, ImageMagick or GraphicsMagick
 
+To install all the dependencies in Ubuntu you can use the following command:
+
+  sudo apt-get install ubuntu-restricted-extras ffmpeg sed inkscape
+
 The **episodes-handler.sh** reads **convertlist.txt**. Each line contains a filename of a mp3 file to be converted or the name of the episode in the previous line (the name is optional, just in case the episode name is different of the file name).
 
 The mp3 file name must be in the following format:
