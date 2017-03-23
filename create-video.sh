@@ -1,7 +1,7 @@
+#!/bin/bash
 
 # Exit on error
 set -e
-
 
 # Test the number of parameters
 if [ $# -lt 1 ] || [ $# -gt 2 ]; then
