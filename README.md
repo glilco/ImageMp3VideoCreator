@@ -23,3 +23,4 @@ create-video.sh will create the video image based on DefaultCover.svg, replacing
 
 The image DefaultCover.svg can be altered but it must contain the placeholders needed by create-video.sh
 
+Also include reencode.sh script that trims silence from mp4 video files.
