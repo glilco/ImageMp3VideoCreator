@@ -22,6 +22,8 @@ do
     unset episodes[0]
     episodes=( "${episodes[@]}" )  
     
+    echo $AUDIO_NAME
+    
     if [ ! -f "$AUDIO_NAME" ]; then
         echo -e "\033[0;31mFile $AUDIO_NAME not found!\033[0m"
         continue
@@ -34,9 +36,9 @@ do
         EPISODE_NAME="${episodes[0]}"
         unset episodes[0]
         episodes=( "${episodes[@]}" )
-        ./create-video.sh $AUDIO_NAME "$EPISODE_NAME"
+        ./create-video.sh "$AUDIO_NAME" "$EPISODE_NAME"
     else
-        ./create-video.sh $AUDIO_NAME
+        ./create-video.sh "$AUDIO_NAME"
     fi
 done
 

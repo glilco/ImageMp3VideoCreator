@@ -12,8 +12,10 @@ fi
 # The first parameter must be the audio filename
 AUDIO_NAME="$1"
 
-ARRAY_EP=(${AUDIO_NAME//./ })
+FILENAME=$(basename "$AUDIO_NAME")
+ARRAY_EP=(${FILENAME//./ })
 ARRAY_EP=(${ARRAY_EP[0]//-/ })
+
 
 if [ ! -f "$AUDIO_NAME" ]; then
     echo -e "\033[0;31mFile $AUDIO_NAME not found!\033[0m"
